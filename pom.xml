@@ -31,35 +31,14 @@
         <archive>
           <manifest>
             <addClasspath>true</addClasspath>
-            <classpathPrefix>lib/</classpathPrefix>
+            
             <mainClass>com.mycompany.app</mainClass>
           </manifest>
         </archive>
       </configuration>
       
       
-      <plugin>
-    <artifactId>maven-assembly-plugin</artifactId>
-    <executions>
-      <execution>
-        <phase>package</phase>
-        <goals>
-          <goal>single</goal>
-        </goals>
-      </execution>
-    </executions>
-    <configuration>
-      <archive>
-        <manifest>
-          <addClasspath>true</addClasspath>
-          <mainClass>com.package.MainClass</mainClass>
-        </manifest>
-      </archive>
-      <descriptorRefs>
-        <descriptorRef>jar-with-dependencies</descriptorRef>
-      </descriptorRefs>
-    </configuration>
- 
+     
       
       
     </plugin>
